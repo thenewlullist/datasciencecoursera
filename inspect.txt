@@ -1,0 +1,8 @@
+inspect <-function(x) {
+      beta<-colnames(x, do.NULL = TRUE, prefix = "col")
+      row1<-cat(" Column Names: \n");cat(beta, sep=", ")
+      row2<-ncol(x)
+      row3<-nrow(x)
+      
+      cat(row1,"\n\n","Number of Columns:\n",row2,"\n\n","Number of Rows:\n",row3,"\n\n","Total Area:\n",row2*row3)
+}
